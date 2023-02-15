@@ -22,7 +22,7 @@ const capReducer = (state = fromJS(initialState.loyaltyCap), action) => {
         'loginError',
         fromJS({
           message: action.error.message,
-          errorCode: action.error.response.status,
+          errorCode: action.error.response?.status,
         }),
       );
     case types.LOGOUT_REQUEST:

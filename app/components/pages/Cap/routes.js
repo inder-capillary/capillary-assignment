@@ -16,6 +16,18 @@ const routes = [
     type: 'authenticationFlow',
     component: lazy(() => import('../AccessForbidden')),
   },
+  {
+    exact: true,
+    path: `${publicPath}/issues`,
+    type: 'issues',
+    component: lazy(() => import('../IssuesPage')),
+  },
+  {
+    exact: true,
+    path: `${publicPath}/issues/:issueId`,
+    type: 'issuesDetails',
+    component: lazy(() => import('../IssuesDetailsPage')),
+  },
 ];
 
 export default routes;

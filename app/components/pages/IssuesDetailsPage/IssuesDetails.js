@@ -64,7 +64,7 @@ IssueDetails.defaultProps = {
 };
 
 IssueDetails.propTypes = {
-  issuesDetails: PropTypes.array(),
+  issuesDetails: PropTypes.array,
 };
 
 const withConnect = connect(mapStateToProps);

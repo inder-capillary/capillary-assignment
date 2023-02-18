@@ -145,7 +145,7 @@ IssuesPage.defaultProps = {
 
 IssuesPage.propTypes = {
   actions: PropTypes.object,
-  issues: PropTypes.array(),
+  issues: PropTypes.array,
 };
 
 export default compose(
